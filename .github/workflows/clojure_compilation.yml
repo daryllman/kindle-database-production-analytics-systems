@@ -28,3 +28,6 @@ jobs:
         run: pwd
       - name: Compile UberJAR in target/uberjar
         run: lein uberjar
+      - name: Run UberJAR
+        run: java -jar target/uberjar/clojure-rest-basic-template-0.1.0-SNAPSHOT-standalone.jar
+        
