@@ -23,6 +23,7 @@ jobs:
       run:
         working-directory: clojure-rest-basic-template
     steps:
+      - uses: actions/checkout@v2
       - name: Check current dir
         run: pwd
       - name: Compile UberJAR in target/uberjar
